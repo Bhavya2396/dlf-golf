@@ -136,15 +136,15 @@ export default function Home() {
       {/* Main Content */}
       <main className="pb-20 bg-[#0A4B3A]">
         {/* Hero Section */}
-        <section className="relative h-[85vh] overflow-hidden">
+        <section className="relative h-[85vh] md:h-[85vh] overflow-hidden">
           {/* Background Layers */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A4B3A]/80 via-[#0A4B3A]/20 to-[#0A4B3A]" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A4B3A] via-[#0A4B3A]/10 to-transparent" />
           
           {/* Golf Course Illustration */}
-            <motion.div 
+          <motion.div 
             initial={{ scale: 1.1 }}
-              animate={{ scale: 1 }}
+            animate={{ scale: 1 }}
             transition={{ duration: 1.8, ease: "easeOut" }}
             className="absolute inset-0"
           >
@@ -152,22 +152,23 @@ export default function Home() {
               src="/illustrations/golf-course-hero.svg"
               alt="Golf Course"
               fill
-              className="object-cover object-[center_75%] opacity-80"
+              className="object-cover object-[65%_75%] sm:object-[center_75%] opacity-80 scale-125 sm:scale-100"
               priority
+              sizes="100vw"
             />
           </motion.div>
 
           {/* Content Container */}
           <div className="relative h-full flex flex-col">
             {/* Top Content */}
-            <div className="p-6 pt-28 space-y-6">
+            <div className="p-4 sm:p-6 pt-24 sm:pt-28 space-y-4 sm:space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="space-y-2"
               >
                 <motion.h1 
-                  className="text-3xl font-bold text-white drop-shadow-lg"
+                  className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
@@ -175,38 +176,38 @@ export default function Home() {
                   Welcome Back,<br />John!
                 </motion.h1>
                 <motion.p 
-                  className="text-lg text-white/90 drop-shadow-lg"
+                  className="text-base sm:text-lg text-white/90 drop-shadow-lg"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}
                 >
                   Perfect weather for golf today
                 </motion.p>
-            </motion.div>
+              </motion.div>
 
-            <motion.div 
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="flex items-center gap-4 bg-[#1A6B4A]/30 backdrop-blur-md p-4 rounded-2xl border border-[#2A8B5A]/30"
+                className="flex items-center gap-2 sm:gap-4 bg-[#1A6B4A]/30 backdrop-blur-md p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-[#2A8B5A]/30"
               >
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold text-white">12.4</span>
-                  <span className="text-sm text-white/80">Handicap</span>
+                  <span className="text-xl sm:text-2xl font-bold text-white">12.4</span>
+                  <span className="text-xs sm:text-sm text-white/80">Handicap</span>
                 </div>
                 <div className="w-px h-8 bg-white/20" />
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold text-white">15</span>
-                  <span className="text-sm text-white/80">Level</span>
-                  </div>
+                  <span className="text-xl sm:text-2xl font-bold text-white">15</span>
+                  <span className="text-xs sm:text-sm text-white/80">Level</span>
+                </div>
                 <div className="w-px h-8 bg-white/20" />
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold text-white">72</span>
-                  <span className="text-sm text-white/80">Best Score</span>
+                  <span className="text-xl sm:text-2xl font-bold text-white">72</span>
+                  <span className="text-xs sm:text-sm text-white/80">Best Score</span>
                 </div>
               </motion.div>
-                </div>
-              </div>
+            </div>
+          </div>
         </section>
 
         {/* Quick Actions */}

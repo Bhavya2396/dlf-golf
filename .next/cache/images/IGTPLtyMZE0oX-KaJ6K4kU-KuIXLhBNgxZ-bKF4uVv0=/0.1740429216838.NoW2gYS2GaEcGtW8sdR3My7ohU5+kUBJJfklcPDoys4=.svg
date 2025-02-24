@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 390 400" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky Gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="200">
+      <stop offset="0%" stop-color="#0A4B3A"/>
+      <stop offset="100%" stop-color="#1A6B4A"/>
+    </linearGradient>
+    <linearGradient id="fairwayGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A8B5A"/>
+      <stop offset="100%" stop-color="#1A6B4A"/>
+    </linearGradient>
+    <!-- Cloud Pattern -->
+    <pattern id="cloudPattern" x="0" y="0" width="150" height="50" patternUnits="userSpaceOnUse">
+      <path d="M10 25 Q 20 10 30 25 Q 40 40 50 25 Q 60 10 70 25" stroke="rgba(255,255,255,0.1)" fill="none"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="390" height="400" fill="url(#skyGradient)"/>
+  <rect width="390" height="400" fill="url(#cloudPattern)"/>
+
+  <!-- Sun -->
+  <circle cx="300" cy="80" r="30" fill="#FFB800" opacity="0.2"/>
+  <circle cx="300" cy="80" r="20" fill="#FFB800" opacity="0.3"/>
+
+  <!-- Mountains in Background -->
+  <path d="M0 150 Q 100 50 195 150 Q 290 50 390 150" fill="#1A6B4A" opacity="0.5"/>
+  <path d="M-50 175 Q 100 100 195 175 Q 290 100 440 175" fill="#2A8B5A" opacity="0.3"/>
+
+  <!-- Golf Course Layers -->
+  <path d="M0 250 Q 195 225 390 250 L 390 400 L 0 400 Z" fill="#1A6B4A"/>
+  <path d="M0 275 Q 195 250 390 275 L 390 400 L 0 400 Z" fill="#2A8B5A"/>
+  <path d="M0 300 Q 195 290 390 300 L 390 400 L 0 400 Z" fill="url(#fairwayGradient)"/>
+
+  <!-- Trees -->
+  <g transform="translate(50,200) scale(0.7)">
+    <path d="M0 0 L 30 -50 L 60 0 Z" fill="#1A6B4A"/>
+    <path d="M10 -10 L 30 -40 L 50 -10 Z" fill="#2A8B5A"/>
+    <rect x="25" y="0" width="10" height="20" fill="#45362D"/>
+  </g>
+  <g transform="translate(320,225) scale(0.7)">
+    <path d="M0 0 L 40 -60 L 80 0 Z" fill="#1A6B4A"/>
+    <path d="M10 -10 L 40 -50 L 70 -10 Z" fill="#2A8B5A"/>
+    <rect x="35" y="0" width="10" height="20" fill="#45362D"/>
+  </g>
+
+  <!-- Bunkers -->
+  <ellipse cx="100" cy="325" rx="20" ry="7" fill="#E2D5A4" opacity="0.8"/>
+  <ellipse cx="260" cy="340" rx="25" ry="10" fill="#E2D5A4" opacity="0.8"/>
+
+  <!-- Flag -->
+  <g transform="translate(195,290) scale(0.8)">
+    <line x1="0" y1="0" x2="0" y2="-60" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M0 -60 L 20 -50 L 0 -40" fill="#FF4444"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Golfer Silhouette -->
+  <g transform="translate(130,300) scale(0.8)">
+    <!-- Body -->
+    <path d="M0 0 Q 5 -20 10 -30 L 15 -10 L 20 0" fill="#000000"/>
+    <!-- Head -->
+    <circle cx="10" cy="-35" r="5" fill="#000000"/>
+    <!-- Golf Club -->
+    <line x1="15" y1="-20" x2="30" y2="-40" stroke="#000000" stroke-width="2"/>
+  </g>
+
+  <!-- Golf Ball -->
+  <circle cx="150" cy="295" r="2" fill="#FFFFFF"/>
+
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.1">
+    <path d="M0 300 L 390 300" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="5 5"/>
+    <path d="M0 325 L 390 325" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="5 5"/>
+    <path d="M0 350 L 390 350" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="5 5"/>
+  </g>
+
+  <!-- Distance Markers -->
+  <g transform="translate(70,325) scale(0.8)">
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF" opacity="0.5"/>
+    <text x="6" y="3" fill="#FFFFFF" opacity="0.5" font-size="10">150y</text>
+  </g>
+  <g transform="translate(230,335) scale(0.8)">
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF" opacity="0.5"/>
+    <text x="6" y="3" fill="#FFFFFF" opacity="0.5" font-size="10">200y</text>
+  </g>
+
+  <!-- Decorative Elements -->
+  <g opacity="0.1">
+    <circle cx="30" cy="50" r="10" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+    <circle cx="350" cy="100" r="15" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+  </g>
+</svg> 

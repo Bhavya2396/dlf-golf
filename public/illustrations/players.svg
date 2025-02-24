@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Player 1 -->
+  <circle cx="80" cy="60" r="20" fill="#4488FF"/>
+  <path d="M60 100 Q 80 90 100 100 L 100 140 L 60 140 Z" fill="#4488FF"/>
+  
+  <!-- Player 2 -->
+  <circle cx="120" cy="70" r="20" fill="#44BB88"/>
+  <path d="M100 110 Q 120 100 140 110 L 140 150 L 100 150 Z" fill="#44BB88"/>
+  
+  <!-- Golf Club -->
+  <line x1="90" y1="90" x2="120" y2="40" stroke="#666666" stroke-width="4"/>
+  <path d="M120 40 L 130 30 L 140 40 L 130 50 Z" fill="#666666"/>
+</svg> 

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 75, 58;
+  --background-end-rgb: 10, 75, 58;
+}
+
+  body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .glass-morphism {
+    background: rgba(26, 107, 74, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(42, 139, 90, 0.1);
+  }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .pb-safe {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 5rem);
+  }
+
+  .pb-safe-chat {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 4rem);
+  }
+
+  .hide-nav {
+    display: none !important;
+  }
+} 
